@@ -112,7 +112,7 @@ block, which contains a CASE statement and no exception handlers.
 statement; recall that a CASE statement must find a matching case. To correct this problem, add a predefined EXCEPTION handler that addresses this error
 and displays “No tax” onscreen.
 4. Run the block again. Now the error is handled in
-the block’s EXCEPTION section.*/
+the block’s EXCEPTION section.*/ 
 DECLARE
     lv_tax_num NUMBER(2,2);
 BEGIN
