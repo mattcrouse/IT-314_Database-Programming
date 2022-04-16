@@ -19,7 +19,7 @@ DECLARE
    TYPE type_basket IS RECORD (
      basket bb_basketitem.idBasket%TYPE,
      qty bb_basketitem.quantity%TYPE,
-     stock bb_product.stock%TYPE);
+     stock bb_product.stock%TYPE); 
    rec_basket type_basket;
    lv_flag_txt CHAR(1) := 'Y';
 BEGIN
