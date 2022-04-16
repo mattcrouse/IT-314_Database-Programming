@@ -1,6 +1,11 @@
 SET SERVEROUTPUT ON SIZE 3000
 
-/*PROBLEM 9*/
+/*PROBLEM 9
+Create a block to retrieve and display pledge and payment information for a specific donor. For
+each pledge payment from the donor, display the pledge ID, pledge amount, number of monthly
+payments, payment date, and payment amount. The list should be sorted by pledge ID and then
+by payment date. For the first payment made for each pledge, display “first payment” on that
+output row.*/
 DECLARE
     CURSOR cur_pledge IS
         SELECT pl.idpledge, pl.pledgeamt, pl.paymonths, pa.paydate, pa.payamt
@@ -36,7 +41,8 @@ BEGIN
     CLOSE cur_pledge;
 END;     
 
-/*PROBLEM 10*/
+/*PROBLEM 10
+Redo Assignment 9, but use a different cursor form to perform the same task.*/
 DECLARE
     CURSOR cur_pledge IS
         SELECT pl.idpledge, pl.pledgeamt, pl.paymonths, pa.paydate, pa.payamt
