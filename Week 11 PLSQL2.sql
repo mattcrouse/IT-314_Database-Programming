@@ -25,7 +25,7 @@ DBMS_OUTPUT.PUT_LINE(rec_proj.idproj);
 DBMS_OUTPUT.PUT_LINE(rec_proj.projname);
 DBMS_OUTPUT.PUT_LINE(rec_proj.projstartdate);
 DBMS_OUTPUT.PUT_LINE(rec_proj.projenddate);
-DBMS_OUTPUT.PUT_LINE(rec_proj.projfundgoal);
+DBMS_OUTPUT.PUT_LINE(rec_proj.projfundgoal); 
 DBMS_OUTPUT.PUT_LINE(rec_proj.projcoord);
 END;
 
