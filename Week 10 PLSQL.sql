@@ -56,7 +56,7 @@ DECLARE
         paydate DD_PAYMENT.paydate%TYPE,
         payamt DD_PAYMENT.payamt%TYPE);
     rec_pledge type_pledge;
-    lv_first NUMBER := 0;
+    lv_first NUMBER := 0; 
 BEGIN
     FOR rec_pledge IN cur_pledge LOOP
             IF lv_first = 0 THEN 
